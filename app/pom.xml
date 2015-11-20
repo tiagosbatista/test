@@ -39,6 +39,8 @@
         <configuration>
           <failOnError>false</failOnError>
           <xmlOutput>true</xmlOutput>
+          <findbugsXmlOutput>true</findbugsXmlOutput>
+          <findbugsXmlWithMessages>true</findbugsXmlWithMessages>
           <findbugsXmlOutputDirectory>${project.build.directory}/findbugs</findbugsXmlOutputDirectory>
         </configuration>
         <executions>
@@ -106,7 +108,10 @@
         <artifactId>findbugs-maven-plugin</artifactId>
         <version>${findbugs.version}</version>
         <configuration>
+          <failOnError>false</failOnError>
           <xmlOutput>true</xmlOutput>
+          <findbugsXmlOutput>true</findbugsXmlOutput>
+          <findbugsXmlWithMessages>true</findbugsXmlWithMessages>
           <findbugsXmlOutputDirectory>${project.build.directory}/findbugs</findbugsXmlOutputDirectory>
         </configuration>
       </plugin>
